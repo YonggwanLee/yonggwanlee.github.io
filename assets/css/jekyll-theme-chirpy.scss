@@ -1,0 +1,16 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Custom: shift avatar to align roughly with "gw" in the name below */
+#avatar {
+  transform: translateX(15px);
+}
