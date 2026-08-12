@@ -1,0 +1,81 @@
+# 국제 저널 논문 목록
+# ─────────────────────────────────────────────
+# 새 논문 추가 방법: 아래 형식을 그대로 복사해서 해당 연도 밑(또는 새 연도 블록)에 추가
+# doi 값을 아직 모르면 doi: "" 로 비워두면 됩니다 → 그 경우 DOI 링크가 자동으로 숨겨집니다
+# ─────────────────────────────────────────────
+
+- year: 2026
+  papers:
+    - title: "Assessment of environmental ecological drought using environmental flow-based indices and copula analysis in an urban tributary of South Korea"
+      authors: "M. Bak, Y.-S. Kim, S.S. Jang, A. Sadeqi, W.H. Nam, E. Hong, S. Kim"
+      journal: "Ecohydrology & Hydrobiology"
+      citation: "26, 100781"
+      date: "2026.07"
+      doi: ""
+    - title: "Integrated SWAT–LSTM modeling with sentinel-2 for chlorophyll-a prediction under climate change in an estuarine reservoir"
+      authors: "W. Jang, C. Jang, J. Kim, Y. Lee, Y. Park, S. Kim*"
+      journal: "Ecological Indicators"
+      citation: "188, 115046"
+      date: "2026.07"
+      doi: ""
+    - title: "Integrated inter-basin water transfer (IBWT) modeling for evaluating trade-offs in streamflow and water quality between recipient and donor basins"
+      authors: "Y. Kim, W. Kim, S. Woo, Y. Lee, S. Kim*"
+      journal: "Journal of Hydrology: Regional Studies"
+      citation: "65, 103350"
+      date: "2026.06"
+      doi: ""
+    - title: "Evaluation of Long-Term Increased Groundwater Abstraction Impact on Watershed Hydrology in Han River Basin, South Korea"
+      authors: "Y. Kim, W. Kim, S. Woo, Y. Lee, S. Kim*"
+      journal: "Water"
+      citation: "18(5), 607"
+      date: "2026.03"
+      doi: ""
+    - title: "Colored dissolved organic matter estimation using Sentinel-2 imagery in small-scale reservoir: Classification and regression-based data resampling approaches"
+      authors: "J. Kim, J.H. Kim, W. Jang, Y. Lee, Y-G. Lee, K. Chon, K.H. Cho, Y. Park*, S. Kim*"
+      journal: "Environmental Research"
+      citation: "291, 123482"
+      date: "2026.02"
+      doi: ""
+
+- year: 2025
+  papers:
+    - title: "Improving reservoir water quality by optimizing weir operations with reinforcement learning and SWAT"
+      authors: "J. Pyo, S.S. Baek, A. Abbas, H.G. Kim, J. Lee, S. Kim, J.A. Chun, K.H. Cho"
+      journal: "Ecohydrology & Hydrobiology"
+      citation: "25(4), 100679"
+      date: "2025.12"
+      doi: ""
+    - title: "Streamflow routing at high temporal resolution: A distributed hydrological model with dam and weir impacts"
+      authors: "Y. Lee, J. Chung, J. Lee, W. Jang, S. Kim*"
+      journal: "Journal of Hydrology: Regional Studies"
+      citation: "60, 102602"
+      date: "2025.08"
+      doi: ""
+    - title: "Understanding the influence of increasing forest biomass on inter-annual evapotranspiration regime using the Budyko framework at forest-dominated landscape"
+      authors: "W. Kim, S. Woo, S. Kim*"
+      journal: "Ecological Indicators"
+      citation: "174, 113508"
+      date: "2025.04"
+      doi: ""
+    - title: "Impact of rapid urbanization on flow regime and ecosystem services at seasonal scale: A case study in water conservation area along the Gyeongan River, South Korea"
+      authors: "W. Kim, S. Woo*, Y. Kim, S. Kim"
+      journal: "Science of the Total Environment"
+      citation: "969(1), 178958"
+      date: "2025.03"
+      doi: ""
+    - title: "An integrated index for the health of aquatic ecosystem based on multi-species distribution models"
+      authors: "S. Woo, W. Kim*, Y. Kim, S. Kim"
+      journal: "Science of the Total Environment"
+      citation: "967(1), 178145"
+      date: "2025.03"
+      doi: ""
+
+# ── 예시: 새 연도/논문 추가 템플릿 (필요할 때 이 블록을 복사해서 쓰세요) ──
+# - year: 2024
+#   papers:
+#     - title: "논문 제목"
+#       authors: "저자1, 저자2, 저자3*"
+#       journal: "저널명"
+#       citation: "권(호), 페이지"
+#       date: "YYYY.MM"
+#       doi: "10.xxxx/xxxxxxx"

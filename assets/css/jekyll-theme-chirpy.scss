@@ -14,3 +14,28 @@
 #avatar {
   transform: translateX(15px);
 }
+
+/* Custom: publication list styling */
+.pub-note {
+  text-align: right;
+  font-size: 0.85em;
+  color: var(--text-muted-color);
+  margin-bottom: 1.5rem;
+}
+.pub-title {
+  display: flex;
+  margin-bottom: 0.15em;
+}
+.pub-num {
+  flex: 0 0 2.4em;
+  font-weight: 700;
+}
+.pub-text {
+  flex: 1 1 auto;
+}
+.pub-authors {
+  margin: 0 0 0.15em 2.4em;
+}
+.pub-journal {
+  margin: 0 0 1.5rem 2.4em;
+}

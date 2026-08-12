@@ -2,8 +2,29 @@
 title: International Publications
 permalink: /publications/international/
 layout: page
+toc: true
 ---
 
-## International Publications
+*[Note: **bold** = Yonggwan Lee, \* = corresponding author]*
+{: .pub-note}
 
-(내용 준비 중)
+{% assign pubs = site.data.publications_international %}
+{% assign total = 0 %}
+{% for group in pubs %}
+  {% assign total = total | plus: group.papers.size %}
+{% endfor %}
+{% assign counter = total %}
+
+{% for group in pubs %}
+## {{ group.year }}
+
+{% for paper in group.papers %}
+<p class="pub-title" markdown="1"><span class="pub-num">{{ counter }}.</span><span class="pub-text">**{{ paper.title }}**{% if paper.doi and paper.doi != "" %} · [DOI](https://doi.org/{{ paper.doi }}){% endif %}</span></p>
+<p class="pub-authors" markdown="1">{{ paper.authors }}</p>
+<p class="pub-journal" markdown="1">*{{ paper.journal }}*. {{ paper.citation }}, {{ paper.date }}</p>
+
+{% assign counter = counter | minus: 1 %}
+{% endfor %}
+{% endfor %}
+
+
