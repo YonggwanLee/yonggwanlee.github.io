@@ -39,3 +39,21 @@
 .pub-journal {
   margin: 0 0 1.5rem 2.4em;
 }
+
+/* Custom: submenu (Members/Publications sub-items) styling */
+.submenu {
+  list-style: none;
+  padding-left: 0;
+}
+.submenu .nav-item {
+  padding-left: 3rem !important;
+}
+.submenu .nav-item .nav-link {
+  position: relative;
+}
+.submenu .nav-item .nav-link::before {
+  content: "○";
+  font-size: 0.5em;
+  margin-right: 0.6em;
+  opacity: 0.7;
+}
