@@ -57,3 +57,41 @@
   margin-right: 0.6em;
   opacity: 0.7;
 }
+
+/* Custom: topbar mode toggle icon visibility */
+#topbar-mode-toggle {
+  color: var(--topbar-text-color);
+}
+
+/* Custom: topbar mode toggle as a pill-shaped button with icon + label */
+.mode-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid var(--btn-border-color);
+  background: var(--button-bg);
+  color: var(--topbar-text-color);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+.mode-toggle-btn:hover {
+  background: var(--sidebar-hover-bg);
+}
+
+/* Custom: hide sidebar dark mode toggle (moved to topbar) */
+#sidebar .sidebar-bottom #mode-toggle {
+  display: none !important;
+}
+#mode-toggle + .icon-border {
+  display: none !important;
+}
+
+/* Custom: hide search bar (replaced by mode toggle button) */
+#topbar search,
+#search-trigger,
+#search-cancel {
+  display: none !important;
+}
