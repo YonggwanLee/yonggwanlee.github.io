@@ -1,6 +1,6 @@
 ---
-title: Conference Publications
-permalink: /publications/conference/
+title: Others
+permalink: /publications/others/
 layout: page
 toc: true
 ---
@@ -8,7 +8,7 @@ toc: true
 *[Note: **bold** = Yonggwan Lee, \* = corresponding author]*
 {: .pub-note}
 
-{% assign pubs = site.data.publications_conference %}
+{% assign pubs = site.data.publications_others %}
 {% assign total = 0 %}
 {% for group in pubs %}
   {% assign total = total | plus: group.papers.size %}
