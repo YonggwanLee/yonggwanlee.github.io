@@ -80,12 +80,21 @@
 .mode-toggle-btn:hover {
   background: var(--sidebar-hover-bg);
 }
+.mode-toggle-btn {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
 
-/* Custom: hide sidebar dark mode toggle (moved to topbar) */
+/* Custom: hide sidebar dark mode toggle (moved to topbar), including its
+   dropdown-menu and the divider dot next to it. The divider is NOT an
+   immediate sibling of #mode-toggle (the dropdown-menu <ul> sits between
+   them in the markup), so it must be targeted independently rather than
+   via `#mode-toggle + .icon-border`. */
 #sidebar .sidebar-bottom #mode-toggle {
   display: none !important;
 }
-#mode-toggle + .icon-border {
+#sidebar .sidebar-bottom .icon-border {
   display: none !important;
 }
 

@@ -112,12 +112,26 @@ layout: compress
         }
 
         if (topbarToggle && sidebarToggle) {
-          topbarToggle.addEventListener('click', function () {
+          var lastToggleTime = 0;
+
+          function handleToggle(e) {
+            // Mobile Safari can fire touchend/pointerup and a synthetic
+            // click for the same tap; guard against double-toggling.
+            var now = Date.now();
+            if (now - lastToggleTime < 400) return;
+            lastToggleTime = now;
+
+            if (e && e.cancelable) e.preventDefault();
+
             if (typeof Theme !== 'undefined' && Theme.update && Theme.Mode) {
               Theme.update(Theme.isDark ? Theme.Mode.LIGHT : Theme.Mode.DARK);
             }
             setTimeout(updateDisplay, 50);
-          });
+          }
+
+          topbarToggle.addEventListener('click', handleToggle);
+          topbarToggle.addEventListener('touchend', handleToggle);
+          topbarToggle.addEventListener('pointerup', handleToggle);
         }
 
         updateDisplay();
