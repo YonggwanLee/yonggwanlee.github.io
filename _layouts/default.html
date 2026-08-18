@@ -110,7 +110,9 @@ layout: compress
 
         if (topbarToggle && sidebarToggle) {
           topbarToggle.addEventListener('click', function () {
-            sidebarToggle.click();
+            if (typeof Theme !== 'undefined' && Theme.flip) {
+              Theme.flip();
+            }
             setTimeout(updateDisplay, 50);
           });
         }
