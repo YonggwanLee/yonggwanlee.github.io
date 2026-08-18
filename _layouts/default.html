@@ -8,8 +8,8 @@ layout: compress
 
 {% include lang.html %}
 
-{% if site.theme_mode %}
-  {% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %}
+{% if site.theme_mode == 'light' or site.theme_mode == 'dark' %}
+  {% capture prefer_mode %}data-bs-theme="{{ site.theme_mode }}"{% endcapture %}
 {% endif %}
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
@@ -90,16 +90,19 @@ layout: compress
         var icon = document.getElementById('topbar-mode-icon');
         var label = document.getElementById('topbar-mode-label');
 
-        function currentMode() {
-          var attr = document.documentElement.getAttribute('data-mode');
-          if (attr) { return attr; }
-          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        function isDark() {
+          if (typeof Theme !== 'undefined' && typeof Theme.isDark !== 'undefined') {
+            return Theme.isDark;
+          }
+          var attr = document.documentElement.dataset.bsTheme;
+          if (attr === 'dark') return true;
+          if (attr === 'light') return false;
+          return window.matchMedia('(prefers-color-scheme: dark)').matches;
         }
 
         function updateDisplay() {
           if (!icon || !label) return;
-          var mode = currentMode();
-          if (mode === 'dark') {
+          if (isDark()) {
             icon.className = 'fas fa-moon';
             label.textContent = 'Dark mode';
           } else {
@@ -110,8 +113,8 @@ layout: compress
 
         if (topbarToggle && sidebarToggle) {
           topbarToggle.addEventListener('click', function () {
-            if (typeof Theme !== 'undefined' && Theme.flip) {
-              Theme.flip();
+            if (typeof Theme !== 'undefined' && Theme.update && Theme.Mode) {
+              Theme.update(Theme.isDark ? Theme.Mode.LIGHT : Theme.Mode.DARK);
             }
             setTimeout(updateDisplay, 50);
           });
@@ -120,7 +123,7 @@ layout: compress
         updateDisplay();
 
         var observer = new MutationObserver(updateDisplay);
-        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode'] });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
       });
     </script>
   </body>
