@@ -81,17 +81,9 @@
   background: var(--sidebar-hover-bg);
 }
 
-/* Custom: hide sidebar dark mode toggle visually, but keep it clickable (moved to topbar) */
+/* Custom: hide sidebar dark mode toggle (moved to topbar) */
 #sidebar .sidebar-bottom #mode-toggle {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+  display: none !important;
 }
 #mode-toggle + .icon-border {
   display: none !important;
@@ -102,17 +94,4 @@
 #search-trigger,
 #search-cancel {
   display: none !important;
-}
-
-/* Custom: hide the dropdown-menu required by page.min.js (prevents null-reference crash) */
-#sidebar .sidebar-bottom .dropdown-menu {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
 }

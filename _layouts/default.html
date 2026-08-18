@@ -84,8 +84,9 @@ layout: compress
     {% include_cached search-loader.html lang=lang %}
 
     <script>
-      function initTopbarToggle() {
+      document.addEventListener('DOMContentLoaded', function () {
         var topbarToggle = document.getElementById('topbar-mode-toggle');
+        var sidebarToggle = document.getElementById('mode-toggle');
         var icon = document.getElementById('topbar-mode-icon');
         var label = document.getElementById('topbar-mode-label');
 
@@ -107,11 +108,9 @@ layout: compress
           }
         }
 
-        if (topbarToggle) {
+        if (topbarToggle && sidebarToggle) {
           topbarToggle.addEventListener('click', function () {
-            if (typeof Theme !== 'undefined' && Theme.flip) {
-              Theme.flip();
-            }
+            sidebarToggle.click();
             setTimeout(updateDisplay, 50);
           });
         }
@@ -120,13 +119,7 @@ layout: compress
 
         var observer = new MutationObserver(updateDisplay);
         observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode'] });
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initTopbarToggle);
-      } else {
-        initTopbarToggle();
-      }
+      });
     </script>
   </body>
 </html>
