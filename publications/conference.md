@@ -5,20 +5,24 @@ layout: page
 toc: true
 ---
 
-*[Note: **bold** = Yonggwan Lee, \* = corresponding author]*
+*[Note: **bold** = Yonggwan Lee]*
 {: .pub-note}
 
-{% assign pubs = site.data.publications_conference %}
-{% assign total = 0 %}
-{% for group in pubs %}
-  {% assign total = total | plus: group.papers.size %}
+{% assign kinds = site.data.publications_conference %}
+
+{% for block in kinds %}
+{% assign block_total = 0 %}
+{% for yg in block.years %}
+  {% assign block_total = block_total | plus: yg.papers.size %}
 {% endfor %}
-{% assign counter = total %}
+{% assign counter = block_total %}
 
-{% for group in pubs %}
-## {{ group.year }}
+## {{ block.kind }}
 
-{% for paper in group.papers %}
+{% for yg in block.years %}
+### {{ yg.year }}
+
+{% for paper in yg.papers %}
 <p class="pub-title" markdown="1"><span class="pub-num">{{ counter }}.</span><span class="pub-text">**{{ paper.title }}**</span></p>
 <p class="pub-authors" markdown="1">{{ paper.authors }}</p>
 <p class="pub-journal" markdown="1">*{{ paper.journal }}*. {{ paper.citation }}, {{ paper.date }}{% if paper.doi and paper.doi != "" %} · [DOI](https://doi.org/{{ paper.doi }}){% endif %}</p>
@@ -26,5 +30,4 @@ toc: true
 {% assign counter = counter | minus: 1 %}
 {% endfor %}
 {% endfor %}
-
-
+{% endfor %}
