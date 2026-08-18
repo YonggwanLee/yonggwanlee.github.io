@@ -86,7 +86,6 @@ layout: compress
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         var topbarToggle = document.getElementById('topbar-mode-toggle');
-        var sidebarToggle = document.getElementById('mode-toggle');
         var icon = document.getElementById('topbar-mode-icon');
         var label = document.getElementById('topbar-mode-label');
 
@@ -108,9 +107,11 @@ layout: compress
           }
         }
 
-        if (topbarToggle && sidebarToggle) {
+        if (topbarToggle) {
           topbarToggle.addEventListener('click', function () {
-            sidebarToggle.click();
+            if (typeof Theme !== 'undefined' && Theme.flip) {
+              Theme.flip();
+            }
             setTimeout(updateDisplay, 50);
           });
         }
