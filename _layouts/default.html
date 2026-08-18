@@ -121,9 +121,9 @@ layout: compress
             setTimeout(updateDisplay, 50);
           }
 
-          // touchend fires (and is reliably cancelable) before the browser's
-          // synthesized click; preventDefault here stops that synthetic
-          // click from also firing and double-toggling the theme.
+          /* touchend fires (and is reliably cancelable) before the browser's
+             synthesized click; preventDefault here stops that synthetic
+             click from also firing and double-toggling the theme. */
           topbarToggle.addEventListener('touchend', function (e) {
             if (e.cancelable) e.preventDefault();
             suppressNextClick = true;
