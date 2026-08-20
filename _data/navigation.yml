@@ -6,10 +6,11 @@
   url: /members/
   icon: fas fa-users
   submenu:
-    - title: Professor
+    - title: PI
       url: /members/professor/
-    - title: Students
-      url: /members/students/
+    # Hidden for now — re-enable when the students page is ready.
+    # - title: Students
+    #   url: /members/students/
 
 - title: Research
   url: /research/
