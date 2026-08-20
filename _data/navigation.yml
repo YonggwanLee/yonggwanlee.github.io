@@ -36,6 +36,11 @@
 - title: Education
   url: /education/
   icon: fas fa-graduation-cap
+  submenu:
+    - title: Satellite Images
+      url: /education/satellite-images/
+    - title: Coastal Engineering
+      url: /education/coastal-engineering/
 
 - title: LEESMORM
   url: /leesmorm/

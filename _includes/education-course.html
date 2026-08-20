@@ -1,0 +1,16 @@
+{% assign course = site.data.education_archive | where: "key", include.course_key | first %}
+
+## {{ course.course }}
+
+{% if course.semesters and course.semesters.size > 0 %}
+{% for sem in course.semesters %}
+### {{ sem.term }}
+
+{% for p in sem.presentations %}
+<p class="proj-line" markdown="1"><span class="pub-num">{{ forloop.index }}.</span><span class="pub-text">{% if p.thumbnail %}<img src="{{ p.thumbnail | relative_url }}" alt="" style="width: 56px; height: 56px; object-fit: cover; border-radius: 4px; margin-right: 0.6em; float: left;">{% endif %}{% if p.link and p.link != "" %}<a href="{{ p.link }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %} — {{ p.presenters }}</span></p>
+{% endfor %}
+
+{% endfor %}
+{% else %}
+*Materials will be added soon.*
+{% endif %}

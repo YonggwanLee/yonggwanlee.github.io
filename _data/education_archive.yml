@@ -1,0 +1,46 @@
+# Archive of student group-presentation materials, by course and semester.
+# Only courses that actually have group presentations belong here (e.g. not
+# Computer Programming) — the full list of courses taught is on the PI page.
+# Each course gets its own page under education/ (see navigation.yml).
+#
+# Schema:
+# - key: 'satellite-images'                # matches a page's `course_key`
+#   course: 'Course title (과목명)'
+#   semesters:
+#     - term: 'Spring 2025'
+#       presentations:
+#         - title: '발표 제목'
+#           presenters: '발표자 이름'
+#           link: 'https://drive.google.com/...'   # omit if none
+#           thumbnail: '/assets/img/education/....jpg'   # optional, omit if none
+
+- key: 'satellite-images'
+  course: 'Application Engineering of Satellite Images (위성영상활용공학)'
+  semesters:
+    - term: 'Spring 2025'
+      presentations:
+        - title: 'MODIS NDVI 기반 산불피해지 회복 경향 분석'
+          presenters: '고보화, 노현승, 양태희'
+          link: 'https://drive.google.com/file/d/1oXkUj9e7BP82M6YuACj4Rll8O0ndHjH5/view?usp=sharing'
+        - title: '새만금 간척지의 시계열 원격탐사 분석'
+          presenters: '이정화, 임채민, 조혜원'
+          link: 'https://drive.google.com/file/d/19kBxmVdSF7zzDDZsxTzxRMi_nK_yNME4/view?usp=sharing'
+        - title: '위성 데이터를 활용한 러시아-우크라이나 전쟁 지역 환경 변화 분석'
+          presenters: '김현호, 문서연, 최지윤'
+          link: 'https://drive.google.com/file/d/1DGvNwDmzbU9pRS0Fwp4BzcV-ljdvY8hZ/view?usp=drive_link'
+        - title: '위성 영상을 활용한 파나마 운하 수면적 변화 분석과 물류 통행량 영향 검토'
+          presenters: '김민성, 노승현, 박해성'
+          link: 'https://drive.google.com/file/d/1gxJRi2Ky071EhwKyYHocQ-GNixLGbuX0/view?usp=drive_link'
+        - title: '식생지수와 지역안정성의 관계'
+          presenters: '김지훈, 김현선, 이수원'
+          link: 'https://drive.google.com/file/d/1abKnys6N6db5hpD4G-vGosiM5N4xQDtj/view?usp=drive_link'
+        - title: 'MODIS 위성자료로 본 지표면온도와 분광지수의 관계'
+          presenters: '위상훤, 안서연, 이다은'
+          link: 'https://drive.google.com/file/d/1lYwIciNsySV66QiywlFamtDeahQUCysl/view?usp=drive_link'
+        - title: 'MODIS VHI와 SPI 시차분석을 활용한 식생 가뭄 조기경보 가능성 평가: 강릉 지역 사례'
+          presenters: '정우석, 최성욱'
+          link: ''
+
+- key: 'coastal-engineering'
+  course: 'Introduction to Coastal Engineering and Modeling (해안공학모델링기초)'
+  semesters: []
