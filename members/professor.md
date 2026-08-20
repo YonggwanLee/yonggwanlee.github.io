@@ -7,12 +7,12 @@ description: "Yonggwan Lee (이용관), Asia Infrastructure Research Center, Kon
 ---
 
 <div style="text-align: center; margin-bottom: 2rem;">
-  <img src="/assets/img/professor.jpg" alt="Yonggwan Lee" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%;">
+  <img src="/assets/img/professor.jpg" alt="Yonggwan Lee" style="width: 100%; max-width: 100%; height: auto;">
 </div>
 
 ## Yonggwan Lee (이용관), Ph.D.
 
-**Assistant Professor**
+**Assistant Professor**  
 Asia Infrastructure Research Center (아시아시설물연구센터), Konkuk University (건국대학교)
 
 - **Office**: Engineering Building A, Room 207-5 (공학관 A동 207-5호)
@@ -29,25 +29,28 @@ I have published numerous papers in leading journals such as Journal of Hydrolog
 
 ## Research Interests
 
-- Remote sensing-based hydrological informatics & modeling (원격탐사 기반 수문 정보화 & 모델링)
+- Physically-based distributed hydrological modeling (물리기반 분포형 수문모델링)
+- Remote sensing-based hydrological informatics (원격탐사 기반 수문 정보화)
 - AI/machine learning-based water resources prediction (AI/머신러닝 기반 수자원 예측)
-- Assessment of streamflow depletion and environmental/ecological flow (하천 갈수 및 환경생태유량 평가)
+- Physics-informed & explainable AI (PINN/XAI) for hydrology (물리정보 및 설명가능 AI 기반 수문해석)
+- Streamflow depletion & ecological flow assessment (하천 갈수 및 생태유량 평가)
+- Drought monitoring and prediction (가뭄 모니터링 및 예측)
 
 ---
 
 ## Education
 
-### Doctor of Philosophy (03/2018 – 08/2022)
+##### **Doctor of Philosophy** (03/2018 – 08/2022)
 Department of Civil, Environmental, and Plant Engineering, Konkuk University
 - Dissertation: "Development of Grid-Based Continuous Hydrologic Model Considering Dam and Weir Release and Deep Learning-Based Iterative Forecasting of Streamflow"
 - Advisor: Dr. Seongjoon Kim
 
-### Master of Science (03/2014 – 02/2016)
+##### **Master of Science** (03/2014 – 02/2016)
 Department of Civil and Environmental System Engineering, Konkuk University
 - Thesis: "Estimation of spatial evapotranspiration for South Korea by modifying meso-scale SEBAL model"
 - Advisor: Dr. Seongjoon Kim
 
-### Bachelor of Science (03/2008 – 02/2014)
+##### **Bachelor of Science** (03/2008 – 02/2014)
 Department of Civil and Environmental System Engineering, Konkuk University
 
 ---
@@ -62,11 +65,11 @@ Department of Civil and Environmental System Engineering, Konkuk University
 
 ## Professional Activities
 
-- Korea Water Resources Association (한국수자원학회)
+- The Korea Water Resources Association (한국수자원학회)
 - The Korean Association of Geographic Information Studies (한국지리정보학회)
 - The Korean Society of Agricultural Engineers (한국농공학회)
-- Korean Society of Civil Engineers (대한토목학회)
-- Korean Society of Remote Sensing (대한원격탐사학회)
+- The Korean Society of Civil Engineers (대한토목학회)
+- The Korean Society of Remote Sensing (대한원격탐사학회)
 
 ---
 
@@ -87,7 +90,7 @@ Department of Civil and Environmental System Engineering, Konkuk University
 
 ## Subjects
 
+- COMPUTER PROGRAMMING (Spring 2025, Fall 2025, Fall 2026)
 - APPLICATION ENGINEERING OF SATELLITE IMAGES (Spring 2024)
-- COMPUTER PROGRAMMING (Spring 2025, Fall 2025)
 - SPATIAL HYDROLOGY (Fall 2025)
 - INTRODUCTION TO COASTAL ENGINEERING AND MODELING (Spring 2026)

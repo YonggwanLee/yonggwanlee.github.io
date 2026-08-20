@@ -1,0 +1,127 @@
+# Schema (mirrors _data/publications_domestic.yml):
+# - year: 2026
+#   projects:
+#     - title: 'Project title (프로젝트명)'
+#       role: 'PI'   # or 'Co-I' — see the glossary note on the Project page
+#       agency: 'Funding agency'
+#       period: '2026.01 – 2027.12'
+#
+# Grouped by year (the project's most recent/end year), newest first — same
+# ordering convention as the publications data files.
+#
+# Consolidated from the 참여확인증명서 (participation certificate): each row
+# in that certificate is one annual/role installment of a multi-year grant,
+# so installments belonging to the same underlying project (same title
+# across "1차/2차/...", "(N/M)", or a renamed continuation) have been merged
+# into a single entry spanning the full participation period. Two payroll
+# bookkeeping lines ("학생인건비 ...") and one internal lab-support line item
+# ("연구소지원 과제") were excluded as they are not distinct research projects.
+
+- year: 2027
+  projects:
+    - title: 'Development of Spatiotemporal Deep Learning-Based Super-Resolution SAR Soil Moisture Estimation and Physics-Aware AI-Based Drought Propagation Prediction Technology (시공간 딥러닝 기반 초해상도 SAR 토양수분 산정 및 Physics-aware AI 기반 가뭄 확산 예측 기술 개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Science and ICT (MSIT)'
+      period: '2026.03 – 2027.02'
+
+- year: 2026
+  projects:
+    - title: 'Development of Water Securing and Optimal Alternative Selection Technology for Ecological Flow-Vulnerable Areas (생태유량 취약지역의 물확보 및 최적대안 선정 기술 개발)'
+      role: 'PI'
+      agency: 'Ministry of Climate, Energy and Environment (MCEE)'
+      period: '2025.04 – 2026.12'
+    - title: 'Development of Intelligent AI-Based Integrated Water Management Technology for General Agricultural Land (지능형 AI 기반의 범용농지 통합물관리 기술 개발)'
+      role: 'Co-I'
+      agency: 'Korea Institute of Planning and Evaluation for Technology in Food, Agriculture and Forestry (IPET)'
+      period: '2025.04 – 2026.12'
+    - title: 'Advanced Technology for Natural Flow Assessment and Streamflow Depletion Prediction Considering Surface Water–Groundwater Interaction (지표수-지하수의 연계를 고려한 자연유량 평가 및 하천갈수량 예측 고도화 기술 개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Climate, Energy and Environment (MCEE)'
+      period: '2022.05 – 2026.12'
+    - title: 'Quantitative Analysis of Water Environment Change under Low-Carbon Growth Scenarios via Coupling of a Grid-Based Distributed Hydrologic Model and a CO2 Emission Model (격자기반 분포형 수문모형과 이산화탄소 배출 모형의 융합을 통한 저탄소 성장 시나리오 기반 수환경 변화 정량적 분석)'
+      role: 'PI'
+      agency: 'National Research Foundation of Korea (NRF)'
+      period: '2023.06 – 2026.05'
+
+- year: 2025
+  projects:
+    - title: 'Ecological Flow Vulnerability Assessment Considering Watershed Environmental Change and Water Quality–Hydrology–Ecosystem Linkage Technology Development (유역환경변화를 고려한 생태유량 취약성 평가 및 수질-수문-수생태 연계 기술 개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Climate, Energy and Environment (MCEE)'
+      period: '2020.05 – 2025.12'
+    - title: 'GIS Data Conversion Service Centered on Road Performance (도로 성능 중심의 GIS Data 변환 용역)'
+      role: 'PI'
+      agency: 'The Seoul Institute'
+      period: '2024.11 – 2025.05'
+
+- year: 2024
+  projects:
+    - title: 'Water Resources Satellite Utilization Technology Development Service (수자원위성 활용기술 개발 용역)'
+      role: 'Co-I'
+      agency: 'Ministry of Environment (MOE)'
+      period: '2023.03 – 2024.03'
+
+- year: 2023
+  projects:
+    - title: 'Survey on Streamflow Depletion and Establishment of Countermeasures (하천의 건천화 실태조사 및 건천화에 따른 대책방안 수립)'
+      role: 'Co-I'
+      agency: 'Ministry of Environment (MOE)'
+      period: '2021.09 – 2023.12'
+
+- year: 2022
+  projects:
+    - title: 'Development of ICT-Based Water Quality Management Techniques for Agricultural Reservoirs (ICT를 이용한 농업용담수호 수질관리 기법개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Agriculture, Food and Rural Affairs (MAFRA)'
+      period: '2020.07 – 2022.04'
+
+- year: 2021
+  projects:
+    - title: 'Study on Baseflow Variation, Its Impact on Stream Water Quality, and Recovery Measures (기저유량 변동 및 하천 수질영향 특성과 회복방안 연구)'
+      role: 'Co-I'
+      agency: 'Ministry of Environment (MOE)'
+      period: '2019.08 – 2021.12'
+    - title: 'Spatiotemporal Cause-Tracking and Impact Assessment Technology for Streamflow Depletion (하천건천화의 시공간적 원인추적 및 영향평가 기술)'
+      role: 'Co-I'
+      agency: 'Ministry of Environment (MOE)'
+      period: '2019.01 – 2021.12'
+
+- year: 2019
+  projects:
+    - title: 'Development of Watershed Health Assessment Technology and an Integrated Water Resources Vulnerability Evaluation System (유역 건전성 평가기술 및 수자원 취약성 통합평가 시스템 개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Environment (MOE)'
+      period: '2019.01 – 2019.12'
+
+- year: 2018
+  projects:
+    - title: 'Development of Drought and Streamflow Depletion Assessment and Prediction Technology (가뭄/하천건천화 평가 및 예측기술 개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Land, Infrastructure and Transport (MOLIT)'
+      period: '2014.07 – 2018.12'
+    - title: 'Development of Water Resources Adaptation Technology to Climate Change (기후변화 대비 수자원 적응기술 개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Land, Infrastructure and Transport (MOLIT)'
+      period: '2015.03 – 2018.06'
+
+- year: 2017
+  projects:
+    - title: 'Establishment of a Korea-Specific Integrated System for Watershed Characteristic Factor and Flood Discharge Estimation (한국형 유역특성인자 및 홍수량 산정 통합시스템 구축)'
+      role: 'Co-I'
+      agency: 'Ministry of Land, Infrastructure and Transport (MOLIT)'
+      period: '2013.02 – 2017.06'
+
+- year: 2015
+  projects:
+    - title: 'Development of Soil Moisture Information Retrieval Technology Using Satellite Data (위성자료를 활용한 토양수분 정보 산출기술 개발)'
+      role: 'Co-I'
+      agency: 'Ministry of Environment (MOE)'
+      period: '2015.06 – 2015.09'
+    - title: 'Climate Change Impact Assessment on Water Environment Using a Land Surface Model (지면모델을 이용한 기후변화 물환경 영향평가)'
+      role: 'Co-I'
+      agency: 'Ministry of Environment (MOE)'
+      period: '2013.04 – 2015.09'
+    - title: 'Development and Pilot Application of ICT-Based Agricultural Disaster Prediction and Response Technology (ICT 기반 농업재해 예측/대응 기술 개발 및 시범 적용)'
+      role: 'Co-I'
+      agency: 'Ministry of Science and ICT (MSIT)'
+      period: '2014.05 – 2015.03'

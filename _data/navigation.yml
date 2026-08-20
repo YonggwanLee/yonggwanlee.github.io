@@ -12,7 +12,7 @@
     # - title: Students
     #   url: /members/students/
 
-- title: Research
+- title: Project
   url: /research/
   icon: fas fa-flask
 

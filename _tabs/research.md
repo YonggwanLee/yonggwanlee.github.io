@@ -1,16 +1,28 @@
 ---
-title: "Research"
+title: "Project"
 layout: page
 permalink: /research/
 icon: fas fa-laptop
 order: 2
+toc: true
 ---
 
-## 연구분야
+*[Note: PI = Principal Investigator (연구책임자), Co-I = Co-Investigator (참여연구원)]*
+{: .pub-note}
 
-- 수문모델링 (Hydrological modelling)
-- 원격탐사 (Remote Sensing)
+{% assign proj_groups = site.data.projects %}
+{% assign total = 0 %}
+{% for group in proj_groups %}
+  {% assign total = total | plus: group.projects.size %}
+{% endfor %}
+{% assign counter = total %}
 
-## 프로젝트 소개
+{% for group in proj_groups %}
+## {{ group.year }}
 
-- test (2024–2025)
+{% for proj in group.projects %}
+<p class="proj-line" markdown="1"><span class="pub-num">{{ counter }}.</span><span class="pub-text">{{ proj.title }}, {{ proj.agency }}, {{ proj.period }} ({% if proj.role == "PI" %}**PI**{% else %}{{ proj.role }}{% endif %})</span></p>
+
+{% assign counter = counter | minus: 1 %}
+{% endfor %}
+{% endfor %}
