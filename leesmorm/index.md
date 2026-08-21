@@ -4,6 +4,4 @@ permalink: /leesmorm/
 layout: page
 ---
 
-## LEESMORM
-
-(내용 준비 중)
+*Content will be added soon.*
