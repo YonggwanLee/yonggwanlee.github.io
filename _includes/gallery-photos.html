@@ -1,0 +1,5 @@
+<div class="gallery-grid">
+{% for photo in include.photos %}
+  <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | default: '' }}" loading="lazy">
+{% endfor %}
+</div>

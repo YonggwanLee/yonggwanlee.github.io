@@ -1,0 +1,5 @@
+{% if page.date or page.location %}
+<p class="gallery-meta">
+  {% if page.date %}{{ page.date | date: "%Y.%m.%d" }}{% if page.end_date %} – {{ page.end_date | date: "%Y.%m.%d" }}{% endif %}{% endif %}{% if page.date and page.location %} · {% endif %}{% if page.location %}{{ page.location }}{% endif %}
+</p>
+{% endif %}

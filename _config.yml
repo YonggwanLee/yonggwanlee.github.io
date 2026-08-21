@@ -170,6 +170,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  gallery_activities:
+    output: true
+    sort_by: date
 
 defaults:
   - scope:
@@ -192,6 +195,13 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: ""
+      type: gallery_activities
+    values:
+      layout: page
+      toc: false
+      permalink: /gallery/:slug/
 
 sass:
   style: compressed
