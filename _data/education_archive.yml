@@ -12,12 +12,17 @@
 #         - title: '발표 제목'
 #           presenters: '발표자 이름'
 #           link: 'https://drive.google.com/...'   # omit if none
-#           thumbnail: '/assets/img/education/....jpg'   # optional, omit if none
+#           # thumbnail: usually don't set this — if `link` is a
+#           # drive.google.com/file/d/... URL, the page auto-derives a
+#           # first-page thumbnail from Google Drive's own thumbnail
+#           # endpoint (nothing is stored in this repo). Only set
+#           # `thumbnail:` explicitly to override that (e.g. a local
+#           # /assets/img/... path, or for a non-Drive link).
 
 - key: 'satellite-images'
-  course: 'Application Engineering of Satellite Images (위성영상활용공학)'
+  course: 'Application Engineering of Satellite Images (위성영상 활용공학)'
   semesters:
-    - term: 'Spring 2025'
+    - term: 'Spring 2026'
       presentations:
         - title: 'MODIS NDVI 기반 산불피해지 회복 경향 분석'
           presenters: '고보화, 노현승, 양태희'
@@ -39,8 +44,51 @@
           link: 'https://drive.google.com/file/d/1lYwIciNsySV66QiywlFamtDeahQUCysl/view?usp=drive_link'
         - title: 'MODIS VHI와 SPI 시차분석을 활용한 식생 가뭄 조기경보 가능성 평가: 강릉 지역 사례'
           presenters: '정우석, 최성욱'
-          link: ''
+          link: 'https://drive.google.com/file/d/12V-Zh4tTpbklU0gZuPVF_z542DPhhPao/view?usp=drive_link'
+    - term: 'Spring 2024'
+      presentations:
+        - title: 'MODIS 분석을 통한 대한민국 봄철 가뭄 분석: NDVI와 PDSI의 상관관계를 중점으로'
+          presenters: '김가영, 김민정, 양윤영'
+          link: 'https://drive.google.com/file/d/1IEYqGOGEXnVyWlHe-JaW1YpMNAq_tP2c/view?usp=sharing'
+        - title: '강우량과 NDVI 지수를 활용한 북한지역 가뭄분석'
+          presenters: '백민기, 구도연, 박지수'
+          link: 'https://drive.google.com/file/d/1HBdcznYlf5kvbERwmWoU7LWlmvGSmD7K/view?usp=sharing'
+        - title: '위성 영상을 활용한 아랄해 사막화 현상 및 주변 지역 분석'
+          presenters: '심용수, 전다은, 장예진'
+          link: 'https://drive.google.com/file/d/1yMdgLR6tP9EyX_qRi1sy94k5QF7WtO3r/view?usp=sharing'
+        - title: '국내 주요 도시 분석 LST, NDVI, ALBEDO'
+          presenters: '김승훈, 유덕현, 이지원'
+          link: 'https://drive.google.com/file/d/12DG6vpJVwVtRFaTjp2mzYOGsUGy-kpX8/view?usp=sharing'
+        - title: '지표면온도(LST)와 정규식생지수(NDVI)를 통한 2022년~2023년 과일 생산량 감소 원인 분석'
+          presenters: '김지환, 최장규, 허재혁'
+          link: 'https://drive.google.com/file/d/1Q7KApm8VKLkQkDuxswFimsGDA_FA9eIq/view?usp=sharing'
+        - title: 'NDVI와 표지피복을 활용한 대규모 산불 복원 추이'
+          presenters: '조민지, 이승원, 이승학'
+          link: 'https://drive.google.com/file/d/1Ixuv7y8B2Whxfapy2sjM2oAfxu5F2IRk/view?usp=sharing'
+        - title: 'MODIS를 활용한 벚꽃 개화시기 분석 및 모델링'
+          presenters: '방종한, 이승리, 정세현'
+          link: 'https://drive.google.com/file/d/1cSTajRnUjtLZ-zHbURAYOYQHdqQbFzQ3/view?usp=sharing'
+        - title: '소나무 분포에 따른 산불 심화'
+          presenters: '임승모, 신승우, 이윤규'
+          link: 'https://drive.google.com/file/d/1LETY9vVWwNNbIayxJ_n7rbjrpPMKliMe/view?usp=sharing'
 
 - key: 'coastal-engineering'
-  course: 'Introduction to Coastal Engineering and Modeling (해안공학모델링기초)'
-  semesters: []
+  course: 'Introduction to Coastal Engineering and Modeling (해안공학과 모델링기초)'
+  semesters:
+    - term: 'Spring 2026'
+      presentations:
+        - title: '인천 해역 대표 지형 사례별 조위 특성과 고조위 침수∙범람 잠재위험 비교 분석'
+          presenters: '강지웅, 김현석, 이주은, 한종'
+          link: 'https://drive.google.com/file/d/1vq0Q9afFMnRVyWyVXpS50fFemMX37j6k/view?usp=sharing'
+        - title: '최근 10년간 성산포 조위자료를 활용한 우도 주변 고수위 특성 및 연륙교 설계수위 기초 검토'
+          presenters: '고채은, 정지호, 최성인, 허은혁'
+          link: 'https://drive.google.com/file/d/1PZrELL-glCGbwhuWouBzVQ6LQbiMJ23e/view?usp=sharing'
+        - title: '조석∙파랑 우세 연안환경 비교 - 동해와 서해의 해안침식 비교'
+          presenters: '강민구, 김선재, 김진혁, 장택'
+          link: 'https://drive.google.com/file/d/1mw3dAW7nPDjBHXU4KlDyDCYySQf2ypU9/view?usp=sharing'
+        - title: '지역별 항만 해역의 파랑 특성 비교 및 해상 작업 환경 영향 분석 - 울산신항∙영일만신항∙감천항 중심'
+          presenters: '유덕현, 이정호, 소재현, 이준서'
+          link: 'https://drive.google.com/file/d/1LxBvhebR7Ow07cD6GdUZfGUmL6scVrMZ/view?usp=sharing'
+        - title: '태풍 이후 연안 해수면 회복 특성 분석 - 조위관측자료 기반 회복시간 정량화 및 관측소별 차이 분석'
+          presenters: '권태영, 양승미, 이윤아, 홍지영'
+          link: 'https://drive.google.com/file/d/1_flk_KcBwWS2TR6WVokb9_SO1B9sKAog/view?usp=sharing'

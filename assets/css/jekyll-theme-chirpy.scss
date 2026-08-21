@@ -30,6 +30,19 @@
   display: flex;
   margin-bottom: 0.6em;
 }
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.2em;
+}
+.edu-thumb {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+.edu-text {
+  flex: 1 1 auto;
+}
 .pub-num {
   flex: 0 0 2.4em;
   font-weight: 700;

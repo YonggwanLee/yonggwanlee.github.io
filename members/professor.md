@@ -12,7 +12,7 @@ description: "Yonggwan Lee (이용관), Asia Infrastructure Research Center, Kon
 
 ## Yonggwan Lee (이용관), Ph.D.
 
-**Assistant Professor**  
+**Assistant Professor** (2024 - current)  
 Asia Infrastructure Research Center (아시아시설물연구센터), Konkuk University (건국대학교)
 
 - **Office**: Engineering Building A, Room 207-5 (공학관 A동 207-5호)
@@ -91,6 +91,6 @@ Department of Civil and Environmental System Engineering, Konkuk University
 ## Subjects
 
 - COMPUTER PROGRAMMING (Spring 2025, Fall 2025, Fall 2026)
-- APPLICATION ENGINEERING OF SATELLITE IMAGES (Spring 2024)
+- APPLICATION ENGINEERING OF SATELLITE IMAGES (Spring 2024, Spring 2026)
 - SPATIAL HYDROLOGY (Fall 2025)
 - INTRODUCTION TO COASTAL ENGINEERING AND MODELING (Spring 2026)
