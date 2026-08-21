@@ -10,6 +10,13 @@
 
 /* append your custom style below */
 
+/* Custom: break long lines at word (어절) boundaries instead of mid-word/
+   mid-syllable — applies to all page content (Publications, Project,
+   Education, PI bio, etc.) since they all render inside .content */
+.content {
+  word-break: keep-all;
+}
+
 /* Custom: shift avatar to align roughly with "gw" in the name below */
 #avatar {
   transform: translateX(15px);
@@ -41,6 +48,7 @@
   max-width: 33%;
 }
 .edu-text {
+  display: flex;
   flex: 1 1 auto;
 }
 .pub-num {
