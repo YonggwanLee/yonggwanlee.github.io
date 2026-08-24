@@ -42,6 +42,7 @@
     - title: Coastal Engineering
       url: /education/coastal-engineering/
 
-- title: LEESMORM
-  url: /leesmorm/
-  icon: fas fa-water
+# Hidden for now — re-enable when ready.
+# - title: LEESMORM
+#   url: /leesmorm/
+#   icon: fas fa-water
