@@ -1,12 +1,102 @@
-<!-- Temporary homepage welcome message — edit freely, this is just a placeholder. -->
-<div class="text-center px-2 py-4" style="max-width: 640px; margin: 0 auto;">
-  <h1 class="mb-3">Welcome (환영합니다)</h1>
-  <p class="mb-0">
-    Thank you for visiting our lab's homepage. The site is currently under
-    construction, so please bear with us as we roll out updates soon.
-  </p>
-  <p class="mt-2">
-    저희 연구실 홈페이지를 방문해 주셔서 감사합니다. 현재 홈페이지를 준비 중이니,
-    조금만 기다려 주시면 순차적으로 업데이트하겠습니다.
-  </p>
+<!-- Home hero: replaces the old "under construction" banner with a
+     content-driven landing section built from data already maintained
+     elsewhere on the site (projects.yml, publications_*.yml), so it never
+     needs a photo and stays accurate without manual upkeep. -->
+
+{% assign pub_total = 0 %}
+{% for group in site.data.publications_international %}{% assign pub_total = pub_total | plus: group.papers.size %}{% endfor %}
+{% for group in site.data.publications_domestic %}{% assign pub_total = pub_total | plus: group.papers.size %}{% endfor %}
+{% for group in site.data.publications_others %}{% assign pub_total = pub_total | plus: group.papers.size %}{% endfor %}
+{% for block in site.data.publications_conference %}
+  {% for yg in block.years %}{% assign pub_total = pub_total | plus: yg.papers.size %}{% endfor %}
+{% endfor %}
+
+{% assign proj_total = 0 %}
+{% for group in site.data.projects %}{% assign proj_total = proj_total | plus: group.projects.size %}{% endfor %}
+
+{% assign latest_pub_group = site.data.publications_international | first %}
+{% assign latest_pub = latest_pub_group.papers | first %}
+
+{% assign latest_proj_group = site.data.projects | first %}
+{% assign latest_proj = latest_proj_group.projects | first %}
+
+<div class="home-hero">
+  <div class="home-hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <path d="M-20,190 C80,150 130,230 230,190 C330,150 380,230 480,190 C540,170 580,180 620,190" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M-20,215 C80,180 130,250 230,215 C330,180 380,250 480,215 C540,198 580,206 620,215" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M-20,240 C80,210 130,270 230,240 C330,210 380,270 480,240 C540,225 580,232 620,240" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M-20,263 C80,240 130,285 230,263 C330,240 380,285 480,263 C540,252 580,258 620,263" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <ellipse cx="460" cy="80" rx="130" ry="46" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 7" transform="rotate(-18 460 80)"/>
+      <circle cx="341" cy="103" r="4" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <div class="home-hero-content">
+    <p class="home-hero-overline">Asia Infrastructure Research Center · Konkuk University</p>
+    <h1 class="home-hero-title">Remote Sensing, GIS &amp; Hydro‑Coastal Modeling Lab</h1>
+    <p class="home-hero-desc">
+      물리기반 수문모델링과 위성 원격탐사·AI를 결합해 가뭄, 하천 갈수, 생태유량 문제를 연구합니다.<br class="d-none d-sm-block">
+      We combine physically-based hydrological modeling with satellite remote sensing and AI to tackle drought, streamflow depletion, and ecological flow challenges.
+    </p>
+
+    <div class="home-hero-tags">
+      <span>Remote Sensing</span>
+      <span>GIS</span>
+      <span>Hydrological Modeling</span>
+      <span>Coastal Engineering</span>
+      <span>AI / XAI</span>
+    </div>
+
+    <div class="home-hero-cta">
+      <a href="{{ '/research/' | relative_url }}" class="btn btn-primary rounded-pill px-3">
+        <i class="fas fa-flask fa-fw"></i> Research
+      </a>
+      <a href="{{ '/members/professor/' | relative_url }}" class="btn btn-outline-secondary rounded-pill px-3">
+        <i class="fas fa-envelope fa-fw"></i> Join Us
+      </a>
+    </div>
+  </div>
 </div>
+<!-- .home-hero -->
+
+<div class="home-stats">
+  <div class="home-stat">
+    <span class="home-stat-num">{{ pub_total }}</span>
+    <span class="home-stat-label">Publications</span>
+  </div>
+  <div class="home-stat">
+    <span class="home-stat-num">{{ proj_total }}</span>
+    <span class="home-stat-label">Funded Projects</span>
+  </div>
+  <div class="home-stat">
+    <span class="home-stat-num">2024</span>
+    <span class="home-stat-label">Lab Founded</span>
+  </div>
+</div>
+<!-- .home-stats -->
+
+<div class="home-highlights">
+  {% if latest_pub %}
+  <a class="home-highlight-card" href="{{ '/publications/international/' | relative_url }}">
+    <span class="home-highlight-tag"><i class="fas fa-book fa-fw"></i> Latest Publication</span>
+    <span class="home-highlight-title">{{ latest_pub.title }}</span>
+    <span class="home-highlight-meta">{{ latest_pub.journal }}, {{ latest_pub.date }}</span>
+  </a>
+  {% endif %}
+
+  {% if latest_proj %}
+  <a class="home-highlight-card" href="{{ '/research/' | relative_url }}">
+    <span class="home-highlight-tag"><i class="fas fa-flask fa-fw"></i> Featured Project</span>
+    <span class="home-highlight-title">{{ latest_proj.title }}</span>
+    <span class="home-highlight-meta">{{ latest_proj.agency }} · {{ latest_proj.period }}</span>
+  </a>
+  {% endif %}
+
+  <a class="home-highlight-card" href="{{ '/members/professor/' | relative_url }}">
+    <span class="home-highlight-tag"><i class="fas fa-user fa-fw"></i> Principal Investigator</span>
+    <span class="home-highlight-title">Yonggwan Lee (이용관), Ph.D.</span>
+    <span class="home-highlight-meta">Assistant Professor · Interested students, please reach out</span>
+  </a>
+</div>
+<!-- .home-highlights -->
