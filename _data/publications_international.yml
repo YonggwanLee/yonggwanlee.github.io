@@ -7,31 +7,31 @@
 - year: 2026
   papers:
     - title: "Integrating MODIS and SMAP Data for Spatially Calibrated SWAT+ Modeling in a Forested Watershed of South Korea"
-      authors: "W. Jang, **Y. Lee**, Y. Kim, J. Chung*, S. Kim\*"
+      authors: 'W. Jang, **Y. Lee**, Y. Kim, J. Chung\*, S. Kim\*'
       journal: "Environmental Modelling & Software"
       citation: "107160"
       date: "2026.09"
       doi: "10.1016/j.envsoft.2026.107160"
     - title: "Integrated SWAT–LSTM modeling with sentinel-2 for chlorophyll-a prediction under climate change in an estuarine reservoir"
-      authors: "W. Jang, C. Jang, J. Kim, **Y. Lee**, Y. Park, S. Kim\*"
+      authors: 'W. Jang, C. Jang, J. Kim, **Y. Lee**, Y. Park, S. Kim\*'
       journal: "Ecological Indicators"
       citation: "188, 115046"
       date: "2026.07"
       doi: "10.1016/j.ecolind.2026.115046"
     - title: "Integrated inter-basin water transfer (IBWT) modeling for evaluating trade-offs in streamflow and water quality between recipient and donor basins"
-      authors: "Y. Kim, W. Kim, S. Woo, **Y. Lee**, S. Kim\*"
+      authors: 'Y. Kim, W. Kim, S. Woo, **Y. Lee**, S. Kim\*'
       journal: "Journal of Hydrology: Regional Studies"
       citation: "65, 103350"
       date: "2026.06"
       doi: "10.1016/j.ejrh.2026.103350"
     - title: "Evaluation of Long-Term Increased Groundwater Abstraction Impact on Watershed Hydrology in Han River Basin, South Korea"
-      authors: "Y. Kim, W. Kim, S. Woo, **Y. Lee**, S. Kim\*"
+      authors: 'Y. Kim, W. Kim, S. Woo, **Y. Lee**, S. Kim\*'
       journal: "Water"
       citation: "18(5), 607"
       date: "2026.03"
       doi: "10.3390/w18050607"
     - title: "Colored dissolved organic matter estimation using Sentinel-2 imagery in small-scale reservoir: Classification and regression-based data resampling approaches"
-      authors: "J. Kim, J.H. Kim, W. Jang, **Y. Lee**, Y-G. Lee, K. Chon, K.H. Cho, Y. Park\*, S. Kim\*"
+      authors: 'J. Kim, J.H. Kim, W. Jang, **Y. Lee**, Y-G. Lee, K. Chon, K.H. Cho, Y. Park\*, S. Kim\*'
       journal: "Environmental Research"
       citation: "291, 123482"
       date: "2026.02"
