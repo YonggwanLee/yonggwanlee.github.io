@@ -2,6 +2,32 @@
 
 - kind: International
   years:
+    - year: 2026
+      papers:
+        - title: 'Analysis of Crop-Specific Evapotranspiration and Water Supply Scenarios for Field-Scale Irrigation Stability in Upland Areas of South Korea: A SWMM-Based Approach'
+          authors: 'Y. Park, **Y. Lee**, W. Jeon, Y. Kim, S. Kim'
+          journal: '13th International Congress on Environmental Modeling and Software'
+          citation: 'University College Dublin'
+          date: '2026.07'
+          doi: ''
+        - title: 'Spatiotemporal Assessment of Stream Drying in Ungauged Tributaries: A Coupled Approach of Distributed Hydrological Modelling and Optical Imagery'
+          authors: '**Y. Lee**, J. Chung, Y. Kim, W. Jang, Y. Kim, S. Kim'
+          journal: '13th International Congress on Environmental Modeling and Software'
+          citation: 'University College Dublin'
+          date: '2026.07'
+          doi: ''
+        - title: 'Spatio-temporal Drought Monitoring Utilizing MODIS-derived Soil Moisture and Drought Indices: A Case Study of Major Drought Events in South Korea (2022-2025)'
+          authors: 'H. Lee, **Y. Lee**, J. Kim, J. Chung, S. Kim'
+          journal: '13th International Congress on Environmental Modeling and Software'
+          citation: 'University College Dublin'
+          date: '2026.07'
+          doi: ''
+        - title: 'Estimation of fish assessment index (FAI) based on AutoML algorithm using SWAT'
+          authors: 'Y. Kim, **Y. Lee**, J. Chung, W. Jeon, S. Kim'
+          journal: '2026 International SWAT conference'
+          citation: 'Aristotle University of Thessaloniki'
+          date: '2026.06'
+          doi: ''
     - year: 2025
       papers:
         - title: 'Hierarchical and Non-hierarchical Cluster Analysis of Standard Watersheds Considering Hydrology, Water Quality, and Aquatic Ecosystem in South Korea'
@@ -329,6 +355,26 @@
 
 - kind: Domestic
   years:
+    - year: 2026
+      papers:
+        - title: '유역모델을 활용한 AutoML 기반 어류평가지수 추정'
+          authors: '김용원, **이용관**, 정지훈, 이현진, 김성준'
+          journal: '2026년 한국수자원학회 학술발표회'
+          citation: '부산항국제컨벤션센터'
+          date: '2026.05'
+          doi: ''
+        - title: 'MODIS 기반 토양수분 및 가뭄지수를 활용한 시공간적 가뭄 모니터링: 2022-2025년 국내 주요 가뭄 사례 분석'
+          authors: '이현진, **이용관**, 김진욱, 정지훈, 박서연, 이주헌, 김성준'
+          journal: '2026년 한국수자원학회 학술발표회'
+          citation: '부산항국제컨벤션센터'
+          date: '2026.05'
+          doi: ''
+        - title: 'SWAT 및 AI 기반의 수문∙지형적 유역 특성을 활용한 환경생태유량 산정 연구'
+          authors: '전원준, **이용관**, 김용원, 박용진, 김성준'
+          journal: '2026년 한국수자원학회 학술발표회'
+          citation: '부산항국제컨벤션센터'
+          date: '2026.05'
+          doi: ''
     - year: 2025
       papers:
         - title: '지하수 이용 증가에 따른 한강유역의 수문학적 영향 평가'

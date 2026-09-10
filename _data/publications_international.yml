@@ -6,6 +6,12 @@
 
 - year: 2026
   papers:
+    - title: "Integrating MODIS and SMAP Data for Spatially Calibrated SWAT+ Modeling in a Forested Watershed of South Korea"
+      authors: "W. Jang, **Y. Lee**, Y. Kim, J. Chung*, S. Kim*"
+      journal: "Environmental Modelling & Software"
+      citation: "107160"
+      date: "2026.09"
+      doi: "10.1016/j.envsoft.2026.107160"
     - title: "Integrated SWAT–LSTM modeling with sentinel-2 for chlorophyll-a prediction under climate change in an estuarine reservoir"
       authors: "W. Jang, C. Jang, J. Kim, **Y. Lee**, Y. Park, S. Kim*"
       journal: "Ecological Indicators"
